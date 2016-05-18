@@ -1,7 +1,7 @@
 $main: #515B65;
 $hightlight: #39DED5;
-$buttonBlue: #7ea4e8;
-$buttonGrey: #6a7079;
+$blue: #7ea4e8;
+$grey: #6a7079;
 $white: #FFF;
 
 body {
@@ -19,7 +19,7 @@ a {
 }
 .header {
   background-color: $main;
-  padding: 200px 0;
+  padding: 150px 0;
 }
 .centered {
   margin: 0 auto;
@@ -30,12 +30,12 @@ h1, .description {
   text-align: center;
 }
 h1 {
-  font-size: 31px;
+  font-size: 27px;
   font-weight: normal;
   text-transform: uppercase;
 }
 .description {
-  font-size: 20px;
+  font-size: 18px;
 
 }
 .wrap {
@@ -55,11 +55,36 @@ h1 {
   width: 70%;
 }
 .button-blue {
-  background-color: $buttonBlue;
+  background-color: $blue;
 }
 .button-grey {
-  background-color: $buttonGrey;
+  background-color: $grey;
 }
 .span {
   font-family: 'FontAwesome', sans-serif;
 }
+.speaker {
+  display: inline-block;
+  background-color: green;
+  width: 20%;
+}
+h2 {
+  margin: 106px 0 5px;
+  text-align: center;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: $grey;
+  font-weight: lighter;
+}
+.subheader {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 18px;
+  color: $grey;
+  letter-spacing: 1px;
+}
+
+
+
+
+

@@ -13,7 +13,7 @@ a {
 
 .header {
   background-color: #515B65;
-  padding: 200px 0; }
+  padding: 150px 0; }
 
 .centered {
   margin: 0 auto;
@@ -24,12 +24,12 @@ h1, .description {
   text-align: center; }
 
 h1 {
-  font-size: 31px;
+  font-size: 27px;
   font-weight: normal;
   text-transform: uppercase; }
 
 .description {
-  font-size: 20px; }
+  font-size: 18px; }
 
 .wrap {
   text-align: center; }
@@ -55,5 +55,25 @@ h1 {
 
 .span {
   font-family: 'FontAwesome', sans-serif; }
+
+.speaker {
+  display: inline-block;
+  background-color: green;
+  width: 20%; }
+
+h2 {
+  margin: 106px 0 5px;
+  text-align: center;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #6a7079;
+  font-weight: lighter; }
+
+.subheader {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 18px;
+  color: #6a7079;
+  letter-spacing: 1px; }
 
 /*# sourceMappingURL=style.css.map */
