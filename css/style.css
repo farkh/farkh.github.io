@@ -250,7 +250,7 @@ footer {
 .contact {
   display: inline-block;
   float: right;
-  width: 15%; }
+  width: 17%; }
   .contact i {
     margin: 0;
     color: #2cc7c1; }
@@ -258,7 +258,7 @@ footer {
     display: inline-block;
     margin-top: 0;
     color: #2cc7c1;
-    margin-left: 2px; }
+    margin-left: 4px; }
 
 .copyright {
   background-color: #3f464c;
