@@ -249,7 +249,7 @@ footer {
   display: inline-block;
   width: 25%;
   position: absolute;
-  margin-left: 80px;
+  margin-left: 75px;
 
   a {
     font-size: 15px;
@@ -291,4 +291,7 @@ footer {
     color: #cacaca;
     font-size: 12px;
   }
+}
+.crutch {
+  min-height: 100%;
 }
