@@ -41,7 +41,8 @@ h1 {
   border-radius: 4px;
   margin: 20px 15px;
   text-align: center;
-  padding: 17px 0; }
+  padding: 17px 0;
+  transition: all 0.3s ease-in; }
 
 .buttons {
   margin: 20px auto;
@@ -104,7 +105,7 @@ h4 {
 
 .content {
   position: relative;
-  transition: top 0.25s ease-in; }
+  transition: top 0.3s ease-in-out; }
 
 .bottom {
   top: 150px; }
@@ -261,5 +262,11 @@ footer {
 
 .crutch {
   min-height: 100%; }
+
+.button-blue:hover {
+  background-color: #89B4FF; }
+
+.button-grey:hover {
+  background-color: #848B96; }
 
 /*# sourceMappingURL=style.css.map */
