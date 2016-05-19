@@ -197,12 +197,29 @@ span {
 .sponsors {
   display: inline-block;
   margin: 50px 0;
+  width: 100%;
 
+  /*
   img:first-child {
     margin-left: 0px;
   }
   img {
-    margin-left: 57px;
+    margin-left: 50px;
+  }
+  */
+}
+.each {
+  width: 19.66%;
+  display: inline-block;
+  p {
+    text-align: center;
+    margin: 0;
+  }
+}
+.last-each {
+  float: right;
+  img {
+    float: right;
   }
 }
 footer {
@@ -210,7 +227,7 @@ footer {
 }
 .social {
   display: inline-block;
-  width: 41.66%;
+  width: 43%;
 
   .feature-description {
     color: $lightGrey;
@@ -272,7 +289,7 @@ footer {
     display: inline-block;
     margin-top: 0;
     color: $hightlight;
-    margin-left: 6px;
+    margin-left: 2px;
   }
 }
 .copyright {
@@ -284,6 +301,3 @@ footer {
     font-size: 12px;
   }
 }
-
-
-

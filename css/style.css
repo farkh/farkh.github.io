@@ -176,18 +176,35 @@ span i {
 
 .sponsors {
   display: inline-block;
-  margin: 50px 0; }
-  .sponsors img:first-child {
-    margin-left: 0px; }
-  .sponsors img {
-    margin-left: 57px; }
+  margin: 50px 0;
+  width: 100%;
+  /*
+  img:first-child {
+    margin-left: 0px;
+  }
+  img {
+    margin-left: 50px;
+  }
+  */ }
+
+.each {
+  width: 19.66%;
+  display: inline-block; }
+  .each p {
+    text-align: center;
+    margin: 0; }
+
+.last-each {
+  float: right; }
+  .last-each img {
+    float: right; }
 
 footer {
   background-color: #525b64; }
 
 .social {
   display: inline-block;
-  width: 41.66%; }
+  width: 43%; }
   .social .feature-description {
     color: #cdd0d2;
     margin-bottom: 15px; }
@@ -241,7 +258,7 @@ footer {
     display: inline-block;
     margin-top: 0;
     color: #2cc7c1;
-    margin-left: 6px; }
+    margin-left: 2px; }
 
 .copyright {
   background-color: #3f464c;
