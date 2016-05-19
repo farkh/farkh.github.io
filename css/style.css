@@ -36,7 +36,7 @@ h1 {
 
 .button {
   display: inline-block;
-  width: 156px;
+  width: 150px;
   height: 18px;
   border-radius: 4px;
   margin: 20px 15px;
@@ -109,15 +109,34 @@ h4 {
 .bottom {
   top: 150px; }
 
-.speaker:hover h4 {
-  color: #2cc7c1; }
-.speaker:hover .ava {
-  background-color: #2cc7c1; }
-  .speaker:hover .ava .bottom {
-    top: 44px; }
-
 span i {
   color: #FFF;
   margin: 0 0 0 44px; }
+
+.speaker:hover {
+  cursor: pointer; }
+  .speaker:hover h4 {
+    color: #2cc7c1; }
+  .speaker:hover .ava {
+    background-color: #2cc7c1; }
+    .speaker:hover .ava .bottom {
+      top: 44px; }
+
+.speakers {
+  border-bottom: 7px solid #F0F0F1;
+  padding-bottom: 80px; }
+
+.video {
+  margin: 106px 0;
+  width: 570px;
+  height: 316px;
+  background-color: #cdd0d2;
+  display: inline-block; }
+  .video img {
+    margin-top: 130px; }
+
+.right-align {
+  display: inline-block;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

@@ -44,7 +44,7 @@ h1 {
 }
 .button {
   display: inline-block;
-  width: 156px;
+  width: 150px;
   height: 18px;
   border-radius: 4px;
   margin: 20px 15px;
@@ -117,6 +117,12 @@ h4 {
 .bottom {
   top: 150px;
 }
+span {
+  i {
+    color: $white;
+    margin: 0 0 0 44px;
+  }
+}
 .speaker:hover {
   h4 {
     color: $hightlight;
@@ -127,11 +133,39 @@ h4 {
     }
     background-color: $hightlight;
   }
+  cursor: pointer;
 }
-span {
-  i {
-    color: $white;
-    margin: 0 0 0 44px;
+.speakers {
+  border-bottom: 7px solid #F0F0F1;
+  padding-bottom: 80px;
+}
+.video {
+  margin: 106px 0;
+  width: 570px;
+  height: 316px;
+  background-color: $lightGrey;
+  display: inline-block;
+
+  img {
+    margin-top: 130px;
   }
 }
+.right-align {
+  display: inline-block;
+  float: left;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
