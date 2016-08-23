@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Мои Работы - Homework No.1</title>
+
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/latest/normalize.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fira Sans Font -->
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/fc68b25d2f.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.js" integrity="sha256-L6ppAjL6jgtRmfiuigeEE5AwNI2pH/X9IBbPyanJeZw=" crossorigin="anonymous"></script>
+    <!-- script.js -->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrap clearfix">
+        <a href="index.html" class="logo">
+          <img src="img/jetbrains_logo.svg" alt="Logo">
+        </a>
+
+        <ul class="social">
+          <li class="icon"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></li>
+          <li class="icon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+          <li class="icon"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+          <li class="icon"><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </ul>
+      </div>
+      <!-- End of .social -->
+    </header>
+
+    <!-- For gradient border -->
+    <div class="gradient"></div>
+
+    <main class="clearfix">
+      <div class="sidebar">
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Обо мне</a></li>
+            <li><a href="portfolio.html">Мои работы</a></li>
+            <li class="active"><a href="contact.html">Связаться со мной</a></li>
+          </ul>
+        </nav>
+        <!-- End of nav-->
+
+        <div class="contacts">
+          <h3>Контакты</h3>
+          <ul> 
+            <li>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <a href="mailto:pochta@mail.ru" target="_blank">pochta@mail.ru</a>
+            </li>
+            <li>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:+7-981-234-23-23" target="_self">+79812342323</a>
+            </li>
+            <li>
+              <i class="fa fa-skype" aria-hidden="true"></i>
+              <a href="http://www.skype.com" target="_blank">nickname</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End of .sidebar -->
+        
+      <div class="content">
+        <div class="contact block">
+          <div class="contact_block_header">
+            <h3>У вас интересный проект? Напишите мне!</h3>
+          </div>
+
+          <div class="bottom">
+            <form class="contact__form clearfix" method="post">
+              <label for="name">Имя</label>
+              <label for="email">Email</label>
+              <input type="text" class="form_field" id="name" name="user_name" placeholder="Как к Вам обращаться" />
+              <input type="email" class="form_field" id="email" name="email" placeholder="Куда мне писать" />
+              <label for="message">Сообщение</label><br>
+              <textarea name="message" class="form_field" id="message" cols="30" rows="10" placeholder="Коротко в чем суть"></textarea>
+              <label for="capcha">Введите код, указанный на картинке</label>
+              <img src="img/capcha.png" alt="Capcha">
+              <input type="text" name="capcha" class="form_field" id="capcha" placeholder="Введите код">
+              <input type="submit" value="Отправить" class="button button__submit disabled">
+              <input type="submit" value="Очистить" class="button button__clear disabled_clear">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_wrap">  
+        <div class="login"><a href="login.html"><img src="img/login.png" alt="Login"></a></div>
+        
+        <p class="copyright">
+            &copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
