@@ -59,6 +59,12 @@ header .social img:hover {
   color: #44A8C0;
 }
 
+.gradient {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #FFF, #194F67 50%, #FFF 100%);
+}
+
 .icon {
   background: #58697A;
   width: 3em;
@@ -369,6 +375,7 @@ footer .login {
 footer .copyright {
   font-size: 0.8em;
   color: #959AA8;
+  margin: 0;
 }
 
 /* P O R T F O L I O */
@@ -602,10 +609,91 @@ form img {
   border: none;
 }
 
+.horizontal_contacts {
+  width: 100%;
+  border-spacing: 0;
+  color: #FFF;
+  display: none;
+  margin-bottom: 1.5em;
+}
+
+.horizontal_contacts a {
+  color: #FFF;
+  font-weight: 200;
+  margin-left: .5em;
+}
+
+.horizontal_contacts tr {
+  height: 40px;
+}
+
+.horizontal_contacts td {
+  margin: 0;
+  padding: 0;
+  width: 33.33333%;
+  text-align: center;
+}
+
+.horizontal_contacts td div {
+  overflow: hidden;
+  width: 100%;
+}
+
+.horizontal_contacts td:nth-child(1) {
+  background: #00BDD7;
+}
+
+.horizontal_contacts td:nth-child(2) {
+  background: #00CFEB;
+}
+
+.horizontal_contacts td:nth-child(3) {
+  background: #00DEFB;
+}
+
 /*-------------------------------------------------
   Media Queries
 --------------------------------------------------*/
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+@media only screen and (max-width: 612px) {
+  .port_block .bottom {
+    width: 80%;
+    margin: 0 auto;
+    background: yellow;
+  }
+  .port_block .bottom .work {
+    width: 45%;
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
+  .port_block .bottom .work:nth-child(2n) {
+    margin-right: 0;
+    float: right;
+  }
+  #name, #email {
+    max-width: 40%;
+  }
+  #email {
+    float: right;
+    margin-right: 0 !important;
+  }
+  textarea {
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 527px) {
+  .icon {
+    margin-left: .3em !important;
+  }
+  .main_info .block {
+    padding-left: 20px !important;
+  }
+  .top {
+    margin-left: -20px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .icon:last-child {
     display: inline-flex;
   }
@@ -620,5 +708,14 @@ form img {
   }
   .content {
     width: 100%;
+  }
+  .horizontal_contacts {
+    display: table;
+  }
+  .contact__form {
+    width: 80% !important;
+  }
+  .footer_wrap {
+    width: 95%;
   }
 }
