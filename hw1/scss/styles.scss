@@ -547,7 +547,7 @@ input, textarea {
 textarea {
   margin: .5em 0;
   padding: 1em 1em;
-  width: 93.7%;
+  width: 95%;
 }
 
 #name, #email {
@@ -560,11 +560,16 @@ textarea {
   margin-right: .2em;
 }
 
+#email {
+  float: right;
+  margin-right: 0 !important;
+}
+
 #capcha {
   height: 30px;
   width: 42.415%;
   float: right;
-  margin: 3em 0;
+  margin: 3em 0 2em;
 }
 
 form {
@@ -585,11 +590,13 @@ form {
   font-weight: 200;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0;
 }
 
 .button__submit {
   background: #00CFEB;
   border-bottom: 3px solid #00ABC3;
+  float: left;
 
   &:hover {
     background: darken(#00CFEB, 5%);
@@ -668,7 +675,7 @@ form {
 
 }
 
-@media only screen and (max-width: 612px) {
+@media only screen and (max-width: 617px) {
   .port_block .bottom {
     width: 80%;
     margin: 0 auto;
@@ -685,12 +692,21 @@ form {
     }
   }
 
-  #name, #email, {
-    max-width: 40%;
+  form {
+    max-width: 90% !important;
+    width: 80% !important;
   }
-  #email {
-    float: right;
-    margin-right: 0 !important;
+
+  #name, #email, #capcha {
+    max-width: 39%;
+  }
+
+  .button {
+    padding: 0 5px;
+  }
+  
+  label[for='name'] {
+    margin-right: 6.6em;
   }
 
   textarea {
@@ -738,12 +754,24 @@ form {
   }
 
   .contact__form {
-    width: 80% !important;
+    max-width: 80% !important;
   }
 
   .footer_wrap {
     width: 95%;
   }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 926px) {
+  .contact__form {
+    max-width: 78% !important;
+    width: 78% !important;
+  }
+
+  label[for='name'] {
+    margin-right: 11.6em;
+  }
+  
 }
 
 
