@@ -5,6 +5,7 @@ html {
 
 body {
   background: url(../img/bg.jpg) repeat;
+  height: 1120px;
 }
 
 ul {
@@ -67,9 +68,9 @@ header .social img:hover {
 
 .icon {
   background: #58697A;
-  width: 3em;
-  height: 3em;
-  margin-left: 1.5em;
+  width: 48px;
+  height: 48px;
+  margin: 0 .75em;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
