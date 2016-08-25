@@ -69,7 +69,6 @@ header {
 }
 
 .icon {
-  background: #58697A;
   width: 48px;
   height: 48px;
   margin: 0 .75em;
@@ -80,14 +79,12 @@ header {
   justify-content: center;
   transition: all .2s ease-in-out;
 
-  i {
-    position: absolute;
-    top: 16%;
-    color: $white;
-    display: block;
-  }
-
-
+  // i {
+  //   position: absolute;
+  //   top: 16%;
+  //   color: $white;
+  //   display: block;
+  // }
 }
 
 .icon:hover {
@@ -99,9 +96,9 @@ header {
   margin-left: 3em;
   display: none;
 
-  i {
-    color: #58697A;
-  }
+  // i {
+  //   color: #58697A;
+  // }
 }
 
 .clearfix {

@@ -67,7 +67,6 @@ header .social img:hover {
 }
 
 .icon {
-  background: #58697A;
   width: 48px;
   height: 48px;
   margin: 0 .75em;
@@ -79,13 +78,6 @@ header .social img:hover {
   transition: all .2s ease-in-out;
 }
 
-.icon i {
-  position: absolute;
-  top: 16%;
-  color: #FFF;
-  display: block;
-}
-
 .icon:hover {
   background: #44A8C0;
 }
@@ -94,10 +86,6 @@ header .social img:hover {
   background: transparent;
   margin-left: 3em;
   display: none;
-}
-
-.icon:last-child i {
-  color: #58697A;
 }
 
 .clearfix {
