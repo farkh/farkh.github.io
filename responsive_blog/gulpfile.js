@@ -1,5 +1,5 @@
 var gulp          = require('gulp'),
-    minifycss     = require('gulp-minify-css'),
+    minifycss     = require('gulp-clean-css'),
     sass          = require('gulp-sass'),
     browserSync   = require('browser-sync'),
     reload        = browserSync.reload,
@@ -39,7 +39,7 @@ gulp.task('styles',function(){
     .pipe(minifycss())
     .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(''+config.css+''))
+    .pipe(gulp.dest(''+paths.css+''))
     .pipe(reload({stream:true}));
 });
 
