@@ -7,6 +7,7 @@ var gulp          = require('gulp'),
     plumber       = require('gulp-plumber'),
     del           = require('del'),
     rename        = require('gulp-rename'),
+    imagemin      = require('gulp-imagemin'),
     sourcemaps    = require('gulp-sourcemaps');
 
 // ///////////////////////////////////////////////
@@ -25,7 +26,7 @@ var paths = {
 // Default Task
 // //////////////////////////////////////////////
 
-gulp.task('default', ['watch', 'browserSync','styles','html']);
+gulp.task('default', ['watch', 'browserSync','styles','html', 'imagemin']);
 
 // ///////////////////////////////////////////////
 // For SASS and CSS
@@ -49,6 +50,16 @@ gulp.task('styles',function(){
 gulp.task('html', function(){
   return gulp.src(paths.html)
     .pipe(reload({stream:true}));
+});
+
+// ///////////////////////////////////////////////
+// Images
+// //////////////////////////////////////////////
+
+gulp.task('imagemin', function() {
+  gulp.src('src/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
 });
 
 // ///////////////////////////////////////////////
