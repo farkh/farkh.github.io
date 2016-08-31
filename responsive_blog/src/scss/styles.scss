@@ -1,0 +1,456 @@
+@import '../../bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import "variables";
+
+// - - - - - - - - - - - - - Global Styles - - - - - - - - - - - - - - //
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $font-family;
+  color: $main;
+  background-color: $bg-grey;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+// - - - - - - - - - - - - - Header Styles - - - - - - - - - - - - - - //
+
+header {
+  background: $highlight;
+  color: $main;
+  height: 140px;
+  overflow: hidden;
+}
+
+.middle {
+  margin: 42.5px auto;
+  width: 86%;
+}
+
+nav {
+  float: right;
+  margin: 16.5px 0;
+
+  a {
+    color: $main;
+    vertical-align: middle;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.active {
+  border-bottom: 1px solid $main;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.logo {
+  float: left;
+  width: 245px;
+  max-width: 40%;
+  transition: all .2s ease-in-out;
+}
+
+// - - - - - - - - - - - - - Content Styles - - - - - - - - - - - - - - //
+
+.container {
+  background-color: $bg-grey;
+}
+
+.page-content {
+  margin: 0 7%;
+  background: $white;
+  padding: 0;
+}
+
+section {
+  float: left;
+  width: 55%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 2.5em;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  color: $main;
+  margin-bottom: 1.5em;
+}
+
+.latest-post {
+  width: 616px;
+  height: 367px;
+
+  h2 {
+    bottom: 12%;
+    font-weight: 400;
+    font-size: 2em;
+  }
+
+  p {
+    bottom: 3%;
+    font-size: 1em;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  .more {
+    right: -20%;
+    width: 20%;
+  }
+
+  i {
+    margin: 167.5px 47.885px;
+  }
+}
+
+.post {
+  margin-bottom: 3em; 
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, .3);
+
+  .tone {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+  }
+
+  i {
+    color: rgba(66, 66, 66, .4);
+  }
+
+  .more {
+    z-index: 3;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);
+    transition: all .2s ease-in-out;
+  }
+
+  .post-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+  }
+
+
+  h2, p {
+    z-index: 2;
+    position: absolute;
+    left: 4%;
+    color: $white;
+  }
+
+  &:hover {
+    .more {
+      right: 0;
+    }
+  }
+}
+
+// - - - - - - - - - - - - - Popular Styles - - - - - - - - - - - - - - //
+
+aside {
+  float: right;
+  width: 42%;
+  margin: 0;
+}
+
+.popular-post {
+  width: 471px;
+  height: 280px;
+
+  h2 {
+    bottom: 10%;
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+
+  p {
+    bottom: 0;
+    font-size: .8em;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .more {
+    right: -18%;
+    width: 18%;
+  }
+
+  i {
+    margin: 118.79px 24.135px;
+  }
+}
+
+
+
+
+
+
+
+/*@include breakpoint($breakpoint-small) {
+  h1{
+    color: $color-secondary;
+    font-size: $font-size-title;
+  }
+  h2{
+    font-size: 1.2em;
+    margin:0;
+    padding:0;
+  }
+  
+  // Заголовок сайта
+  header{
+    @include span(12);
+    background-color:$color-secondary;
+    padding:0 1%;
+    color: $white;
+    h2{
+      @include span(12);
+      font-size: 1.5em;
+      padding:0 0.4em;
+    }
+    nav{
+      @include span(12);
+    }
+    ul{
+      list-style-type: none;
+      padding:0;
+      margin:0;
+      padding-left:0.1em;
+      li{
+        display: inline-block;
+        a{
+          font-size: 1em;
+          display: block;
+          padding: 0.5em;
+        }
+      }
+    }
+    a{
+      color: $white;
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+  // Последние посты
+  .latest-posts{
+    @include span(12);
+
+    article{
+      border:1px solid $color-background;
+      padding:0.5em;
+      margin-bottom: 1em;
+      p{
+        font-size: 0.9em;
+      }
+      a{
+        color: darken($color-background, 25%);
+      }
+      footer{
+        font-size: 0.9em;
+        color:#333;
+      }
+    }
+  }
+  // Популярные посты
+  .popular-posts{
+    @include span(12);
+    article{
+      background-color:lighten($color-background, 5%);
+      border:1px solid $color-background;
+      padding:0.5em;
+      margin-bottom: 1em;
+      a{
+        color: darken($color-background, 20%);;
+      }
+    }
+  }
+  // Подвал
+  .footer{
+    @include span(12);
+    background-color:$color-secondary;
+    font-size: 1em;
+    padding:0.5em 1%;
+    color: $white;
+    a{
+      color:lighten( $color-primary, 22%);
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+}
+
+// ***********************************
+// СРЕДНИЕ УСТРОЙСТВА
+// ***********************************
+@include breakpoint($breakpoint-medium){
+
+// Здесь мы просто изменим что необходимо модифицировать,
+// потому что предыдущий стиль применяется автоматически
+
+  // Заголовок сайта
+  header{
+    @include span(12);
+    background-color:$color-primary;
+    h2{
+      @include span(3);
+      font-size: 3em;
+    } 
+    nav{
+      @include span(8);
+    }
+    ul{
+      text-align: right;
+      margin-top:0.4em;
+      li{
+        a{
+          font-size: 1.7em;
+        }
+      }
+    }
+  }
+
+  // Последние посты
+  .latest-posts{
+    @include span(6);
+    article{
+      h2{
+        font-size: 1.8em;
+      }
+      border:1px solid $color-background;
+      padding:0.5em;
+      margin-bottom: 2em;
+      clear: both;
+      p{
+        font-size: $font-size-default+50;
+      }
+      a{
+        color: darken($color-background, 25%);
+      }
+      footer{
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  // Популярные посты
+  .popular-posts{
+    @include span(6);
+    padding-left:1em;
+    article{
+      h2{
+        font-size: 1.8em;
+      }
+      background-color:lighten($color-background, 2%);
+      border:1px solid transparent;
+      padding:0.5em;
+      margin-bottom: 1em;
+      p{
+        font-size: $font-size-default+50;
+      }
+      a{
+        color: darken($color-background, 20%);;
+      }
+      footer{
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  // Подвал
+  .footer{
+    @include span(12);
+    background-color:$color-primary;
+    font-size: 1.5em;
+  }
+}
+  
+// ***********************************
+// БОЛЬШИЕ УСТРОЙСТВА
+// ***********************************
+@include breakpoint($breakpoint-large){
+
+// Здесь мы просто изменим что необходимо модифицировать,
+// потому что предыдущий стиль применяется автоматически
+
+  // Заголовок сайта
+  header{
+    @include span(12);
+    background-color:lighten($color-primary, 15%);
+    padding:0%;
+  }
+   // Последние посты
+  .latest-posts{
+    // оставим пустым, это значит что будет применяться предыдущий стиль
+  }
+  // Популярные посты
+  .popular-posts{
+    @include span(6);
+    padding-left:1em;
+    article{
+      h2{
+        font-size: 1.8em;
+      }
+      background-color:lighten($color-background, 2%);
+      border:1px solid transparent;
+      padding:0.5em;
+      margin-bottom: 1em;
+      p{
+        font-size: $font-size-default+50;
+      }
+      a{
+        color: darken($color-background, 20%);;
+      }
+      footer{
+        font-size: 1.3em;
+      }
+    }
+  }
+  // Подвал
+  .footer{
+    padding:0em;
+    background-color:lighten($color-primary, 15%);
+  }
+}
+*/
