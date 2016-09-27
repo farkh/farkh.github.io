@@ -11,12 +11,66 @@
     font-size: 48px;
     font-weight: 300;
     text-align: center;
-    color: #FF8552;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    transition: all .3s ease-in-out;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: #FF8552;
+      height: 3px;
+
+      transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+      color: #FF8552;
+
+      &:before {
+        left: 0;
+        right: 0;
+      }
+    }
   }
 
   h2 {
     font-size: 36px;
     font-weight: 300;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      background: #FF8552;
+      height: 3px;
+
+      transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+      color: #FF8552;
+
+      &:before {
+        right: 0;
+      }
+    }
   }
 
   p {
@@ -47,7 +101,7 @@
   left: -190px;
   width: 120px;
   padding: 30px;
-  background: #333;
+  background: #39393A;
   z-index: 0;
   font-family: 'Avenir Next', sans-serif;
 
