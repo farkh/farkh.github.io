@@ -1,0 +1,22 @@
+{
+  "name": "l",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ainur Farkh <farkhutdinov1398@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "normalize.css": "*"
+  }
+}
