@@ -11,6 +11,7 @@
     font-size: 48px;
     font-weight: 300;
     text-align: center;
+    color: #FF8552;
   }
 
   h2 {
@@ -33,6 +34,10 @@
   cursor: pointer;
 
   transition: all .3s ease-in-out;
+
+  &:hover {
+    color: #FF8552;
+  }
 }
 
 .sidebar {
@@ -60,9 +65,10 @@
     cursor: pointer;
     text-decoration: none;
     display: block;
+    transition: all .3s ease-in-out;
 
     &:hover {
-      color: rgba(255, 255, 255, 1);
+      color: #FF8552;
     }
   }
 
