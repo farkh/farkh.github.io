@@ -44,10 +44,10 @@
   h2 {
     font-size: 36px;
     font-weight: 300;
-    width: 300px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    display: inline-block;
 
     transition: color .3s ease-in-out;
 
